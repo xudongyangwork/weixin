@@ -52,12 +52,19 @@ ROOT_URLCONF = 'weixin.urls'
 
 WSGI_APPLICATION = 'weixin.wsgi.application'
 
-
+SERVER = '123.57.147.36'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'weixin',
+        'USER': 'root',
+        'HOST': SERVER,
+        'PORT': '3306',
+        },
+    'sqlite': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }

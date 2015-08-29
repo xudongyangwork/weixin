@@ -1,0 +1,21 @@
+<uwsgi>
+    <socket>:3680</socket>
+    <master/>
+    <chdir>/root/workspace/weixin/weixin</chdir>
+    <pythonpath>/root/workspace/weixin/weixin</pythonpath>
+    <module>wsgi</module>
+
+    <workers>4</workers>
+    <listen>128</listen>
+    <stats>/tmp/stats_weixin.socket</stats>
+    <enable-threads/>
+    <logto>/root/workspace/weixin/weixin/log/uwsgi/uwsgi.log</logto>
+    <daemonize>/root/workspace/weixin/weixin/log/uwsgi/uwsgi.log</daemonize>
+    <memory-report/>
+
+    <buffer-size>65535</buffer-size>
+    <post-buffering>1024</post-buffering>
+
+    <reload-on-as>1200</reload-on-as>
+    <reload-on-rss>750</reload-on-rss>
+</uwsgi>

@@ -1,8 +1,8 @@
 <uwsgi>
     <socket>:3680</socket>
     <master/>
-    <chdir>/root/workspace/weixin/weixin</chdir>
-    <pythonpath>/root/workspace/weixin/weixin</pythonpath>
+    <chdir>/root/workspace/weixin</chdir>
+    <pythonpath>/root/workspace/weixin</pythonpath>
     <module>wsgi</module>
 
     <workers>4</workers>
